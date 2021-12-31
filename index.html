@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather Info</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="time">
+              <h1> <span id="hour"> </span>  : <span id="min"></span> : <span id="sec"></span></h1>
+          </div>
+          <div class="dateName">
+              <h3> <span id="date"> </span><span id="month"> </span>, <span id="year"> </span></h3>
+          </div>
+          
+          <br> <br>
+          <div>
+                <div class="location_part">
+                   <div class="row">
+                    <div class="col-md-8">
+                       <div class="input_form">
+                        <input type="email" class="form-control weather_input" id="city_name" aria-describedby="emailHelp">
+                       </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="submit_button">
+                            <button type="submit" id="buttn" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <br> <br> 
+                <div class="dic">
+                    <p> Current Temp : <span id="current_temp"></span> </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="left_one">
+                                <p>Pressure : <span id="min_temp"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="middle_one">
+                                <p>Temp Feels Like : <span id="feels_temp"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="right_one">
+                                <p>Humidity: <span id="max_temp"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="image_section">
+                    <p >Description : <img id="image" src=" " alt=""> <span id="desc"></span></p>
+                    
+                </div>
+          </div>
+      </div>
+    
+      <script src="js/main_func.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
